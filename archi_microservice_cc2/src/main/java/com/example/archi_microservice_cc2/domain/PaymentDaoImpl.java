@@ -1,6 +1,5 @@
 package com.example.archi_microservice_cc2.domain;
 
-import org.springframework.context.annotation.Bean;
 import org.springframework.data.redis.core.HashOperations;
 import org.springframework.stereotype.Service;
 
@@ -10,6 +9,8 @@ import javax.annotation.Resource;
 public class PaymentDaoImpl implements PaymentDAO {
 
     private final String hashReference = "Payment";
+
+
 
     @Resource(name = "redisTemplate")
     private HashOperations<String, String, PaymentStatus> hashOperations;

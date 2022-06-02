@@ -14,9 +14,9 @@ public class PaymentController {
 
     private final PaymentValidationService paymentValidationService;
     private final PaymentService paymentService;
-    private final PaymentDaoImpl paymentDao;
+    private final PaymentDaoRedisImpl paymentDao;
 
-    public PaymentController(PaymentValidationService paymentValidationService, PaymentService paymentService, PaymentDaoImpl paymentDao) {
+    public PaymentController(PaymentValidationService paymentValidationService, PaymentService paymentService, PaymentDaoRedisImpl paymentDao) {
         this.paymentValidationService = paymentValidationService;
         this.paymentService = paymentService;
         this.paymentDao = paymentDao;

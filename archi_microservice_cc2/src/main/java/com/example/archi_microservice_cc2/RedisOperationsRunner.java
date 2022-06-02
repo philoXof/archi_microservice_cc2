@@ -4,7 +4,7 @@ import com.example.archi_microservice_cc2.domain.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 
-public class RedisOpertionsRunner implements CommandLineRunner {
+public class RedisOperationsRunner implements CommandLineRunner {
 
     @Autowired
     private PaymentDAO paymentDAO;
